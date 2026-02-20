@@ -16,5 +16,16 @@ void setup() {
     delay(1000);
 }
 
+// ... setup code from above ...
+
 void loop() {
+    // Read digital state from IR sensor
+    sensorState = digitalRead(IR_PIN);
+
+    // Active-low logic: LOW signal indicates obstacle presence
+    if (sensorState == LOW) {
+        Serial.println("Obstacle Detected");
+    } else {
+        Serial.println("No Obstacle");
+    }
 }
