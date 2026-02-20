@@ -1,10 +1,8 @@
 #include <Arduino.h>
-/**
- * @file main.cpp
- * @brief Embedded Obstacle Detection System using IR Sensor
- * @author rishabh-rb
- * @date 2026-02-20
- */
+
+#define IR_PIN 2
+
+int sensorState = 0;
 
 void setup() {
 }
